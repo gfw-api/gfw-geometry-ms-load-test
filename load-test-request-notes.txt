@@ -1,0 +1,87 @@
+HELLO ONLY REQUEST NOTES
+CLI: loadtest -c 50 --rps 50 -n 12500 -m POST http://mymachine:5700/api/v1/loadtest-python/ -p payload.json -T application/json
+Target URL:          http://mymachine:5700/api/v1/loadtest-python/
+Max requests:        12500
+Concurrency level:   50
+Agent:               none
+Requests per second: 50
+
+Completed requests:  12500
+Total errors:        0
+Total time:          249.988755555 s
+Requests per second: 50
+Mean latency:        11.2 ms
+
+Percentage of the requests served within a certain time
+  50%      8 ms
+  90%      19 ms
+  95%      26 ms
+  99%      50 ms
+ 100%      163 ms (longest request)
+
+
+DISSOLVE REQUEST NOTES
+CLI: loadtest -c 50 --rps 50 -n 12500 -m POST http://mymachine:5800/api/v1/test-gdal-dissolve/dissolve -p payload.json -T application/json
+Target URL:          http://mymachine:5800/api/v1/test-gdal-dissolve/dissolve
+Max requests:        12500
+Concurrency level:   50
+Agent:               none
+Requests per second: 50
+
+Completed requests:  12500
+Total errors:        0
+Total time:          250.122163722 s
+Requests per second: 50
+Mean latency:        26.4 ms
+
+Percentage of the requests served within a certain time
+  50%      19 ms
+  90%      44 ms
+  95%      65 ms
+  99%      130 ms
+ 100%      303 ms (longest request)
+
+
+DASK REQUEST NOTES
+CLI: loadtest -c 50 --rps 50 -n 12500 -m POST http://mymachine:5900/api/v1/test-gdal-dask/dissolve -p payload.json -T application/json 
+Target URL:          http://mymachine:5900/api/v1/test-gdal-dask/dissolve
+Max requests:        12500
+Concurrency level:   50
+Agent:               none
+Requests per second: 50
+
+Completed requests:  12500
+Total errors:        0
+Total time:          250.33535089199998 s
+Requests per second: 50
+Mean latency:        54.7 ms
+
+Percentage of the requests served within a certain time
+  50%      27 ms
+  90%      107 ms
+  95%      159 ms
+  99%      717 ms
+ 100%      1348 ms (longest request)
+
+
+TURF DISSOLVE NOTES
+CLI: loadtest -c 50 --rps 50 -n 12500 -m POST http://mymachine:3100/api/v1/geostore/area -p payload.json -T application/json 
+Target URL:          http://mymachine:3100/api/v1/geostore/area
+Max requests:        12500
+Concurrency level:   50
+Agent:               none
+Requests per second: 50
+
+Completed requests:  12500
+Total errors:        0
+Total time:          250.052984858 s
+Requests per second: 50
+Mean latency:        349.8 ms
+
+Percentage of the requests served within a certain time
+  50%      86 ms
+  90%      1270 ms
+  95%      1646 ms
+  99%      1941 ms
+ 100%      2125 ms (longest request)
+
