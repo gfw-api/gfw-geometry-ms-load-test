@@ -1,0 +1,143 @@
+Test: 50 requests per second
+CPU results: 2 gfw-pro pools, one peaks at 29.5%, the other at 23%
+CLI: loadtest -c 50 --rps 50 -n 15000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        15000
+Concurrency level:   50
+Agent:               none
+Requests per second: 50
+
+Completed requests:  15000
+Total errors:        0
+Total time:          300.03811445499997 s
+Requests per second: 50
+Mean latency:        45.1 ms
+
+Percentage of the requests served within a certain time
+  50%      40 ms
+  90%      46 ms
+  95%      50 ms
+  99%      72 ms
+ 100%      1861 ms (longest request)
+
+---
+
+Test: 100 requests per second
+CPU results: 2 gfw-pro pools, one peaks at 74.3%, the other at 43.6%
+CLI: loadtest -c 100 --rps 100 -n 30000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        30000
+Concurrency level:   100
+Agent:               none
+Requests per second: 100
+
+Completed requests:  30000
+Total errors:        7
+Total time:          300.07310509399997 s
+Requests per second: 100
+Mean latency:        96.7 ms
+
+Percentage of the requests served within a certain time
+  50%      47 ms
+  90%      83 ms
+  95%      188 ms
+  99%      1459 ms
+ 100%      2907 ms (longest request)
+
+---
+
+Test: 200 requests per second
+CPU results: 2 gfw-pro pools, one peaks at 99.2%, the other at 74.3%
+CLI: loadtest -c 200 --rps 200 -n 60000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        60000
+Concurrency level:   200
+Agent:               none
+Requests per second: 200
+
+Completed requests:  60000
+Total errors:        2525
+Total time:          316.857647295 s
+Requests per second: 189
+Mean latency:        11041.4 ms
+
+Percentage of the requests served within a certain time
+  50%      3246 ms
+  90%      18484 ms
+  95%      65619 ms
+  99%      127283 ms
+ 100%      127347 ms (longest request)
+
+---
+
+Test: 500 requests per second
+CPU results: 2 gfw-pro pools, one peaks at 98.7%, the other at 81.2%
+CLI: loadtest -c 500 --rps 500 -n 150000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        150000
+Concurrency level:   500
+Agent:               none
+Requests per second: 500
+
+Completed requests:  150000
+Total errors:        89705
+Total time:          349.38467476 s
+Requests per second: 429
+Mean latency:        40675.9 ms
+
+Percentage of the requests served within a certain time
+  50%      14357 ms
+  90%      127306 ms
+  95%      127515 ms
+  99%      131442 ms
+ 100%      162796 ms (longest request)
+
+---
+
+Test: 1000 requests per second
+CPU results: 99.2%, 84.3%
+CLI: loadtest -c 1000 --rps 1000 -n 300000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json 
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        300000
+Concurrency level:   1000
+Agent:               none
+Requests per second: 1000
+
+Completed requests:  300000
+Total errors:        208434
+Total time:          512.820950124 s
+Requests per second: 585
+Mean latency:        41780.4 ms
+
+Percentage of the requests served within a certain time
+  50%      12042 ms
+  90%      127938 ms
+  95%      128539 ms
+  99%      130046 ms
+ 100%      131870 ms (longest request)
+
+---
+
+Test: 2000 requests per second
+CPU results: 98.3%, 80.2%
+CLI: loadtest -c 2000 --rps 2000 -n 600000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        600000
+Concurrency level:   2000
+Agent:               none
+Requests per second: 2000
+
+Completed requests:  600000
+Total errors:        452966
+Total time:          872.6502603710001 s
+Requests per second: 688
+Mean latency:        39358.6 ms
+
+Percentage of the requests served within a certain time
+  50%      16343 ms
+  90%      127756 ms
+  95%      128694 ms
+  99%      132327 ms
+ 100%      186977 ms (longest request)
+
+---
