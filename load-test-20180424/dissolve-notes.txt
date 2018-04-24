@@ -1,0 +1,141 @@
+Test: 50 requests per second
+CPU results: 31%, 30%
+CLI: loadtest -c 50 --rps 50 -n 15000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        15000
+Concurrency level:   50
+Agent:               none
+Requests per second: 50
+
+Completed requests:  15000
+Total errors:        0
+Total time:          300.045071978 s
+Requests per second: 50
+Mean latency:        62 ms
+
+Percentage of the requests served within a certain time
+  50%      41 ms
+  90%      50 ms
+  95%      57 ms
+  99%      99 ms
+ 100%      5652 ms (longest request)
+
+---
+
+Test: 100 requests per second
+CPU results: 63.8%, 61.7%
+CLI: loadtest -c 100 --rps 100 -n 30000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        30000
+Concurrency level:   100
+Agent:               none
+Requests per second: 100
+
+Completed requests:  30000
+Total errors:        3
+Total time:          300.04063608 s
+Requests per second: 100
+Mean latency:        58.1 ms
+
+Percentage of the requests served within a certain time
+  50%      48 ms
+  90%      67 ms
+  95%      80 ms
+  99%      122 ms
+ 100%      5283 ms (longest request)
+
+---
+
+Test: 200 requests per second
+CPU results: 97.6%, 95.1%
+CLI: loadtest -c 200 --rps 200 -n 60000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        60000
+Concurrency level:   200
+Agent:               none
+Requests per second: 200
+
+Completed requests:  60000
+Total errors:        11
+Total time:          300.08334042 s
+Requests per second: 200
+Mean latency:        1109.1 ms
+
+Percentage of the requests served within a certain time
+  50%      116 ms
+  90%      4394 ms
+  95%      6411 ms
+  99%      10087 ms
+ 100%      17700 ms (longest request)
+
+---
+Test: 500 requests per second
+CPU results: 99.3%, 98.7%
+CLI: loadtest -c 500 --rps 500 -n 150000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        150000
+Concurrency level:   500
+Agent:               none
+Requests per second: 500
+
+Completed requests:  150000
+Total errors:        74471
+Total time:          352.28330774299997 s
+Requests per second: 426
+Mean latency:        38477.8 ms
+
+Percentage of the requests served within a certain time
+  50%      16123 ms
+  90%      127293 ms
+  95%      131267 ms
+  99%      154353 ms
+ 100%      175469 ms (longest request)
+
+---
+
+Test: 1000 requests per second
+CPU results: 99.2%, 98.7%
+CLI: loadtest -c 1000 --rps 1000 -n 300000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json 
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        300000
+Concurrency level:   1000
+Agent:               none
+Requests per second: 1000
+
+Completed requests:  300000
+Total errors:        183888
+Total time:          518.024703178 s
+Requests per second: 579
+Mean latency:        41466.3 ms
+
+Percentage of the requests served within a certain time
+  50%      14459 ms
+  90%      128014 ms
+  95%      128527 ms
+  99%      129590 ms
+ 100%      187398 ms (longest request)
+
+---
+
+Test: 2000 requests per second
+CPU results: 99.3%, 98.7%
+CLI: loadtest -c 2000 --rps 2000 -n 600000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        600000
+Concurrency level:   2000
+Agent:               none
+Requests per second: 2000
+
+Completed requests:  600000
+Total errors:        384874
+Total time:          956.943618993 s
+Requests per second: 627
+Mean latency:        43542.4 ms
+
+Percentage of the requests served within a certain time
+  50%      16990 ms
+  90%      128575 ms
+  95%      130060 ms
+  99%      132105 ms
+ 100%      189565 ms (longest request)
+
