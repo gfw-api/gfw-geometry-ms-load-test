@@ -1,0 +1,5 @@
+requests_per_second,peak_cpu,mean_latency,error_count,total_requests
+50,49,153.4,0,15000
+100,29,46.5,0,30000
+200,65,48.8,0,60000
+500,99,10630.3,150000

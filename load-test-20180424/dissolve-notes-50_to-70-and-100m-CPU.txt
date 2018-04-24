@@ -1,0 +1,123 @@
+Test: 50 requests per second
+CPU results: 26,23,11
+Number of pods: 50
+CLI: loadtest -c 50 --rps 50 -n 15000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        15000
+Concurrency level:   50
+Agent:               none
+Requests per second: 50
+
+Completed requests:  15000
+Total errors:        0
+Total time:          300.005238307 s
+Requests per second: 50
+Mean latency:        42.2 ms
+
+Percentage of the requests served within a certain time
+  50%      40 ms
+  90%      46 ms
+  95%      49 ms
+  99%      62 ms
+ 100%      117 ms (longest request)
+
+---
+
+Test: 100 requests per second
+CPU results: 50.8,45.9,15.5
+Number of pods: 50
+CLI: loadtest -c 100 --rps 100 -n 30000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        30000
+Concurrency level:   100
+Agent:               none
+Requests per second: 100
+
+Completed requests:  30000
+Total errors:        0
+Total time:          300.037297577 s
+Requests per second: 100
+Mean latency:        47.2 ms
+
+Percentage of the requests served within a certain time
+  50%      45 ms
+  90%      55 ms
+  95%      62 ms
+  99%      77 ms
+ 100%      266 ms (longest request)
+
+---
+
+Test: 200 requests per second
+CPU results: 90.7,86.6,75.4
+Number of pods: 68 max, 29 min
+CLI: loadtest -c 200 --rps 200 -n 60000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        60000
+Concurrency level:   200
+Agent:               none
+Requests per second: 200
+
+Completed requests:  60000
+Total errors:        0
+Total time:          300.067874111 s
+Requests per second: 200
+Mean latency:        92 ms
+
+Percentage of the requests served within a certain time
+  50%      57 ms
+  90%      104 ms
+  95%      130 ms
+  99%      234 ms
+ 100%      13785 ms (longest request)
+
+---
+
+Test: 500 requests per second
+CPU results: 99,98,98
+Number of pods: 68, sometimes 50
+CLI: loadtest -c 500 --rps 500 -n 150000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        150000
+Concurrency level:   500
+Agent:               none
+Requests per second: 500
+
+Completed requests:  150000
+Total errors:        118701
+Total time:          414.511943959 s
+Requests per second: 362
+Mean latency:        42146.7 ms
+
+Percentage of the requests served within a certain time
+  50%      1500 ms
+  90%      128009 ms
+  95%      128306 ms
+  99%      128915 ms
+ 100%      129941 ms (longest request)
+
+---
+
+Test: 1000 requests per second
+CPU results: 99.1,99.1,98.8
+Number of pods: max 68, sometimes 44
+CLI: loadtest -c 1000 --rps 1000 -n 300000 -m POST http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve -p payload.json -T application/json 
+Target URL:          http://35.231.236.14/api/v1/gfw-pro/polyIntersect/dissolve
+Max requests:        300000
+Concurrency level:   1000
+Agent:               none
+Requests per second: 1000
+
+Completed requests:  300000
+Total errors:        293279
+Total time:          672.1684481890001 s
+Requests per second: 446
+Mean latency:        59018.3 ms
+
+Percentage of the requests served within a certain time
+  50%      3756 ms
+  90%      128567 ms
+  95%      128916 ms
+  99%      131312 ms
+ 100%      133013 ms (longest request)
+
